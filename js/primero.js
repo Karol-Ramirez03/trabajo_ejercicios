@@ -43,26 +43,26 @@ function imc(peso,altura){
     return estado
 }
 function imprimirarreglo(...param){
-    console.log(param.join('\n'))
+    console.log(param.join('\n'));
 }
 
 function contarrango(num1,num2) {
-    let contador = 0
+    let contador = 0;
     for (let i = num1 + 1;i < num2; i++) {
-        contador++
+        contador++;
     }
-    return contador
+    return contador;
 }
 
 function likes(num){
     if (num < 1000) {
-        return num + ""
+        return num + "";
     } else if (num < 1000000) {
-        let total= Math.trunc(num/1000)+'k' 
-        return total
+        let total= Math.trunc(num/1000)+'k';
+        return total;
     } else if (num < 100000000) {
-        let total= Math.trunc(num/1000000)+'M' 
-        return total
+        let total= Math.trunc(num/1000000)+'M';
+        return total;
     }
 }
 
@@ -70,55 +70,55 @@ function sumarrango(numeroinicial, numerofinal) {
     if (numeroinicial === numerofinal) {
         return 0;
     }
-    let suma = 0
+    let suma = 0;
     for (let i = numeroinicial; i <= numerofinal; i++) {
-        suma += i
+        suma += i;
     }
-    return suma
+    return suma;
 }
 
 function numerodeaes(palabra) {
-    let contador = 0
+    let contador = 0;
     for (let i=0; i < palabra.length; i++) {
         if (palabra[i] === 'A'|| palabra[i] === 'a'){
-            contador++
+            contador++;
         }
     }
-    return contador
+    return contador;
 }
 function numerodecaracteres(palabra,caracter) {
-    let contador = 0
+    let contador = 0;
     for (let i=0; i < palabra.length; i++) {
         if (palabra[i] === caracter){
             contador++
         }
     }
-    return contador 
+    return contador;
 }
 
 function sumararreglo(arreglo) {
     if (arreglo.length===0) {
-        return 0
+        return 0;
     } else {
-        return arreglo[0] + sumararreglo(arreglo.slice(1))
+        return arreglo[0] + sumararreglo(arreglo.slice(1));
     }
 }
 function multiplicararreglo(arreglo) {
     if (arreglo.length===0) {
-        return 1
+        return 1;
     } else {
-        return arreglo[0] * multiplicararreglo(arreglo.slice(1))
+        return arreglo[0] * multiplicararreglo(arreglo.slice(1));
     }
 }
 
 function removerceros(arreglo){
-    let numeroremover = 0
+    let numeroremover = 0;
     let i = arreglo.indexOf(numeroremover)
     while (i!== -1) {
-        arreglo.splice(i,1)
-        i = arreglo.indexOf(numeroremover)
+        arreglo.splice(i,1);
+        i = arreglo.indexOf(numeroremover);
     }
-    return arreglo
+    return arreglo;
 }
 
 function transcribir(cadena) {
@@ -142,26 +142,26 @@ function capitalizar(palabra) {
         return "";
     } else {
         resultado= palabra[0].toUpperCase()+palabra.slice(1);
-        return resultado
+        return resultado;
     }
 }
 function max(array) {
-    let number = 0
+    let number = 0;
     for (let i=0; i < array.length; i++) {
         if (array[i] >= number) {
-            number = array[i] 
+            number = array[i];
         }
     }
-    return number
+    return number;
 }
 function numerospares(array) {
-    let pares = []
+    let pares = [];
     for (let i=0; i < array.length; i++) {
         if (array[i] % 2 === 0) {
-             pares.push(array[i])
+             pares.push(array[i]);
         }
     }
-    return pares
+    return pares;
 }
 function password(str) {
     let cambios = '';
