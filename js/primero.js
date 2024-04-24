@@ -177,7 +177,7 @@ function password(str) {
             } else if (letras === 'o') {
                 letras = '0';
             }
-            cambios += char;
+            cambios += letras;
         }
     }
     return cambios;
